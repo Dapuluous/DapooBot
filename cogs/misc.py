@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 import random
 from itertools import accumulate
-import random
 
 class Misc(commands.Cog):
 	def __init__(self, client):
@@ -35,15 +34,6 @@ class Misc(commands.Cog):
 					teamArray.append(FinalizedRandom[x][y])
 
 			await ctx.send(f"```{', '.join(map(str, teamArray))}```")
-
-		# await ctx.send(f'Input Example: {Output}')
-	# 	if (len(inputku) == 0):
-	# 	await ctx.send("Tidak ada input terdaftar")
-	# else:
-	# 	iniArray = inputku.split(",")
-	# 	InputRandomized = random.sample(iniArray, len(iniArray))
-
-	# 	await ctx.send(f'Inputku: {InputRandomized}')
 
 def setup(client):
 	client.add_cog(Misc(client))
