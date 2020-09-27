@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-.__pycache__/
+__pycache__/
 cogs/__pycache__/
 *.py[cod]
 *$py.class
@@ -139,4 +139,4 @@ dmypy.json
 cython_debug/
 
 # Token
-.heartBot.py
+heartBot.py
